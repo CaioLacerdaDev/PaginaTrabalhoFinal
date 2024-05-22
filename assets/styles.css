@@ -1,0 +1,41 @@
+* {
+    margin: 0; /* Remove a margem padrão do body que é 8px */
+    padding: 0; /* Remove o padding padrão do body que é 8px */
+    box-sizing: border-box; /* Faz com que o padding e a borda não aumentem o tamanho do elemento */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    border: none; /* Remove a borda padrão dos elementos */
+    outline: none; /* Remove a borda de foco dos elementos */
+    scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão do projeto */
+  }
+  
+  :root {
+    --bg-color: #080808; /* Define a cor de fundo do projeto */
+    --secondary-bg-color: #121212; /* Define a cor de fundo secundária do projeto */
+    --text-color: #e4e4e4; /* Define a cor do texto do projeto */
+    --main-color: #00ffee; /* Define a cor principal do projeto */
+  }
+  
+  html {
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  }
+  
+  body {
+    background-color: var(--bg-color); /* Define a cor de fundo do body */
+    color: var(--text-color); /* Define a cor do texto do body */
+  }
+  
+  .header {
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0; /* Define a distância do topo */
+    left: 0; /* Define a distância da esquerda */
+    width: 100%; /* Define a largura do cabeçalho */
+    padding: 2rem 16rem; /* Adiciona um espaçamento interno */
+    background: rgba(0, 0, 0, 0.3); /* Adiciona um fundo com transparência */
+    backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque */
+    display: flex; /* Faz com que os elementos fiquem em linha */
+    justify-content: space-between; /* Alinha os elementos no espaço entre eles */
+    align-items: center; /* Alinha os elementos no centro no eixo vertical */
+    z-index: 5; /* Define a ordem de empilhamento */
+  }
+  
