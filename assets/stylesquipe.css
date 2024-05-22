@@ -178,65 +178,26 @@ span {
     color: var(--bg-color);
 }
 
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
+#principal {
+    text-align: center; 
+    padding: 10px;
 }
 
-.text-animation span {
-    position: relative;
+#principal > div {
+    display: inline-block; 
+    margin: 10px; 
+    text-align: center; 
 }
 
-.text-animation span::before {
-    content: "Equipe Collect Trash";
-    color: var(--main-color);
-    animation: words 20s infinite;
+#principal img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid #ccc; 
 }
 
-.text-animation span::after {
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 1s infinite, typing 20s steps(14) infinite;
+#principal h1 {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
-
-@keyframes cursor {
-    to {
-        border-left: 3px solid var(--main-color);
-    }
-}
-
-@keyframes typing {
-
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95% {
-        width: 0;
-    }
-
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%,
-    100% {
-        width: calc(100% + 8px);
-    }
-}
-
