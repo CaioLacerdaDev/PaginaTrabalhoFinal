@@ -179,22 +179,22 @@ span {
 }
 
 #principal {
-    text-align: center; 
+    text-align: center;
     padding: 10px;
 }
 
-#principal > div {
-    display: inline-block; 
-    margin: 10px; 
-    text-align: center; 
+#principal>div {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
 }
 
 #principal img {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    border: 5px solid #ccc; 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ccc;
 }
 
 #principal h1 {
