@@ -29,7 +29,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100.87%;
     padding: 2rem 16rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -178,26 +178,33 @@ span {
     color: var(--bg-color);
 }
 
-#principal {
-    text-align: center;
-    padding: 10px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-#principal>div {
-    display: inline-block;
-    margin: 10px;
+main div {
     text-align: center;
+    margin: 150px;
 }
-
-#principal img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+main img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px var(--main-color), 0 0 15px var(--main-color),
+        0 0 20px var(--main-color);
+}
+main img {
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    border: 5px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
 
-#principal h1 {
-    font-size: 1.2em;
-    margin-top: 10px;
+main h1 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ffffff;
 }
